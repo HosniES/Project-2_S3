@@ -17,7 +17,7 @@ pipeline {
      stage("Deploy") {          	 
    		 steps {               	 
    				 sh "mvn install"
-                 deploy adapters: [tomcat8(credentialsId: '6d1942f8-9c3f-4a8f-8e53-c9dd0a9b4911', path: '', url: 'http://18.118.5.35:9090')], contextPath: 'Eclipes-Stepthree', war: '**/*.war'
+                 deploy adapters: [tomcat9(credentialsId: '9191739d-6dc8-4240-a176-815e31e1333d', path: '', url: 'http://13.59.77.241:8080')], contextPath: 'Project-2_S3', war: '**/*war'
    			 }     	 
    		 }
      }
